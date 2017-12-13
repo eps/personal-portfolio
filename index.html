@@ -17,13 +17,14 @@
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,7 +63,10 @@
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,21 +80,71 @@
             <div class="header-content-inner">
                 <h1>Herman Chan</h1>
                 <hr>
-                <p>Full stack web developer</p>
+                <p>FRONT END DEVELOPER</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="resume-bg" id="about">
+      <div class="container">
+        <div class="inner col-lg-8 col-lg-offset-2">
+          <p class="inner-header">Hello World, I am a full stack developer that is passionate about front end.</p>
+          <div class="console-header"></div>
+            <div class="console">
+              <div class="object">
+              </p> <span class="link">var</span> person = {
+                  <br>
+                  <div class="obj-props">
+                      <p>name: <span class="string">"Herman Chan"</span>,</p>
+                      <p>origin: <span class="string">"San Francisco, CA"</span>,</p>
+                      <p>education: [ <span class="string">"General Assembly", "San Francisco State University"</span> ],</p>
+                      <p>workExperience: [ <span class="string">"#Beauty", "Pacific Gas & Electric"</span> ],</p>
+                      <p>interests: [ <span class="string">"Gaming", "Snowboarding" , "Coding"</span> ],</p>
+                      <p>github: <span class="string">"<a class="console-link" href="https://github.com/hermchan/"><span class="link">https://github.com/hermchan/</span></a><span class="string">"</span></p>
+                      <p>resume: <span class="string">"<a class="page-scroll console-link" href="img/portfolio/HermanChan_Resume.pdf"><span class="link">hermanchan.pdf</span></a><span class="string">"</span></p>
+                      <p>email: <span class="string">"<a class="console-link" href="mailto:hermchan89@gmail.com"><span class="link">hermchan89@gmail.com</span></a><span class="string">"</span></p>
+                  </div>
+                };
+                </p>
+              </div>
+              <p>> person.name
+                <br><span class="props">=> Herman Chan</span>
+              </p>
+              <p>> person.origin
+                <br><span class="props">=> San Francisco, CA</span>
+              </p>
+              <p>> person.education
+                <br><span class="props">=> [ "General Assembly", "San Francisco State University" ]</span>
+              </p>
+              <p>> person.workExperience[0]
+                <br><span class="props"> => "#Beauty"</span>
+              </p>
+              <p>> person.interests
+                <br><span class="props"> => [ "Gaming", "Snowboarding", "Coding" ]</span>
+              </p>
+              <p>> person.resume
+                <br><span class="props"> => "<a class="console-link" href="img/portfolio/HermanChan_Resume.pdf"><span class="blue">hermanchan.pdf</span></a>"</span>
+              </p>
+              <p>> person.email
+                <br><span class="props"> => "<a class="console-link" href="mailto:hermchan89@gmail.com"><span class="blue">hermchan89@gmail.com</span></a>"</span>
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Hello, World!</h2>
                     <hr class="light">
                     <p class="text-faded">Hi, I'm Herman</p>
-                    <p class="text-faded">I am a junior full stack web developer based in San Francisco, California<br>that wants to help bring good ideas to life.</p>
-                    <p class="text-faded">Attending General Assembly, a 12 week Web Development Immersive, was one of the best decisions I've made in my life. I've acquired a lifestyle that I am truly passionate about.</p>
+                    <p class="text-faded">I am a full stack web developer based in San Francisco, California<br>that wants to help bring great ideas to life.</p>
+                    <p class="text-faded">Attending a 12 week Web Development Immersive bootcamp, was one of the best decisions I've made in my life. I've acquired a lifestyle that I am truly passionate about.</p>
+                    <p class="text-faded">I love developing web applications with emphasis on front end development.</p>
                     <p class="text-faded">I'm into anything outdoors and I'm obsessed with adventure. When I'm not glued to my monitor, you'll find me playing baseball, on hiking trails, and most of all,
                       <br>on a snowboard (only if there's snow).</p>
                     <br>
@@ -98,7 +152,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="services">
         <div class="container">
@@ -115,7 +169,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
                         <h3>Sturdy Templates</h3>
-                        <p class="text-muted">HTML5/CSS3, Javascript, Ruby on Rails, AngularJS, jQuery, MongoDB, Node.js, Express.js and many more.</p>
+                        <p class="text-muted">HTML5/CSS3, Javascript, Ruby on Rails, AngularJS, jQuery, ReactJS and many more.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -136,7 +190,7 @@
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Made with Love</h3>
-                        <p class="text-muted">I love designing and creating websites that emphasises user experience.</p>
+                        <p class="text-muted">I love designing and creating sleek, clean websites.</p>
                     </div>
                 </div>
             </div>
@@ -151,24 +205,6 @@
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
-              <div class="col-lg-4 col-sm-6">
-                  <a href="http://tic-tac-dino.bitballoon.com/" class="portfolio-box">
-                      <img src="img/portfolio/tic-tac-toe.jpg" class="img-responsive" alt="">
-                      <div class="portfolio-box-caption">
-                          <div class="portfolio-box-caption-content">
-                              <div class="project-category text-faded">
-                                  Project
-                              </div>
-                              <div class="project-name">
-                                  Tic-Tac-Toe
-                              </div>
-                              <div class="project-category text-faded">
-                                  March 2016 | HTML5, CSS3, Javascript, jQuery
-                              </div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="https://damp-harbor-89981.herokuapp.com/" class="portfolio-box">
                         <img src="img/portfolio/textNow.jpg" class="img-responsive" alt="">
@@ -181,7 +217,7 @@
                                     textNow
                                 </div>
                                 <div class="project-category text-faded">
-                                    April 2016 | HTML5, CSS3, Javascript, jQuery, AJAX, API, Handlebars, MongoDB
+                                    April 2016 | HTML5, CSS3, JavaScript, jQuery, AJAX, API, Handlebars, MongoDB
                                 </div>
                             </div>
                         </div>
@@ -217,7 +253,7 @@
                                     PolaSnap
                                 </div>
                                 <div class="project-category text-faded">
-                                    May 2016 | HTML5, CSS3, Javascript, Ruby, Ruby on Rails, jQuery, PostgreSQL
+                                    May 2016 | HTML5, CSS3, JavaScript, Ruby, Ruby on Rails, jQuery, PostgreSQL
                                 </div>
                             </div>
                         </div>
@@ -235,22 +271,40 @@
                                     videoShare
                                 </div>
                                 <div class="project-category text-faded">
-                                    June 2016 | HTML5, CSS3, Javascript, Firebase.io, AngularJS, YouTube API
+                                    June 2016 | HTML5, CSS3, JavaScript, Firebase.io, AngularJS, YouTube API
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                    <a href="http://www.hashtagbeauty.com/" class="portfolio-box">
+                        <img src="img/portfolio/luli.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                     Project
                                 </div>
                                 <div class="project-name">
-                                    Coming soon..
+                                    #beauty
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://warcrafteps.herokuapp.com" class="portfolio-box">
+                        <img src="img/portfolio/warcrafteps.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Project
+                                </div>
+                                <div class="project-name">
+                                    WoW Character Search
+                                </div>
+                                <div class="project-category text-faded">
+                                    December 2017 | HTML5, CSS3, Sass, JavaScript, ReactJS, Node.js, Webpack
                                 </div>
                             </div>
                         </div>
@@ -260,18 +314,86 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="resume">
+      <div class="container">
+        <div class="inner col-lg-8 col-lg-offset-2">
+          <h2 class="header">RESUME</h2>
+          <h2 class="resume-tagline">WORK EXPERIENCE</h2>
+          <div class="work">
+            <div class="resume-info">
+              <!-- <img src="img/companies/beauty.png" alt="" class="icon beauty-logo"></img> -->
+              <a href="https://www.hashtagbeauty.com"><span class="company-logo"><img class="beauty-icon" src="img/companies/beauty.png" alt=""></img></span></a>
+              <span class="company-tagline">#beauty</span><span class="right"></i>August 2016</i></span>
+              <br>
+              Software Engineer Intern<span class="right"><i>San Francisco, CA</i></span>
+              <p>Executed and contributed to full-stack web development projects, with an emphasis on front end features and mobile compatibility. Deployed front-end code with AngularJS and ReactJS. Collaberated with UX designer to bring sketches to life.</p>
+
+              <span class="skill">HTML5</span>
+              <span class="skill">SASS/CSS</span>
+              <span class="skill">ReactJS</span>
+              <span class="skill">AngularJS</span>
+              <span class="skill">Redux</span>
+              <span class="skill">PostgreSQL</span>
+              <span class="skill">Zeplin</span>
+            </div>
+          <div class="resume-info">
+            <a href="https://www.pge.com/"><img class="icon" src="img/companies/pge-logo.png" alt=""></img></a>
+            <span class="company-tagline">Pacific Gas & Electric</span><span class="right"></i>May 2015 - March 2016</i></span>
+            <br>
+            Administrative Clerk<span class="right"><i>San Francisco, CA</i></span>
+            <p>
+              Delegated task and responsibitlies for the Interconnection Team on a daily basis.
+              Corresponded with PG&E engineers and external contractors from various companies with exceptional customer service and professionalism.
+              Oversaw the complete application process from initial application to submission.
+              Served as the main point of contact between customers and contractors with PG&E engineers and sent an average 120-150 emails a day to contractors and customers.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="resume-tagline">EDUCATION</h2>
+        <div class="education">
+          <div class="resume-info">
+            <a href="https://www.generalassembly.com"><img class="icon" src="img/companies/ga-logo.png" alt=""></img></a>
+            <span class="education-text">General Assembly</span><span class="right"></i>March 2016 - June 2016</i></span>
+            <br>
+            Web Development Student<span class="right"><i>San Francisco, CA</i></span>
+            <p>Over an intensive 12-week immersive course, I built a solid web development foundation that prepared me with emphasis on work-ready skill set. I learned how to work in group settings using collaborative tools such as github, stand-ups, and paired-programming.</p>
+
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">Javascript</span>
+            <span class="skill">Ruby/Rails</span>
+            <span class="skill">AngularJS</span>
+            <span class="skill">JQuery</span>
+            <span class="skill">NodeJS</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">Git</span>
+            <span class="skill">Heroku</span>
+          </div>
+
+          <div class="resume-info">
+            <a href="https://www.sfsu.edu/"><img class="icon" src="img/companies/sfsu-logo.png" style="object-fit: cover;" alt=""></img></a>
+            <span class="education-text">San Francisco State University</span><span class="right"></i>August 2011 - August 2014</i></span>
+            <br>
+            Business Administration, Information Systems Concentration, B.S.<span class="right"><i>San Francisco, CA</i></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>I am constantly striving for small victories.</p>
                     <p>Feel free to contact me through any of the following, I would love to hear from you!</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-file-text-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="img/portfolio/Herman_Chan_Resume.pdf">Resume</a></p>
+                    <p><a href="img/portfolio/HermanChan_Resume.pdf">Resume</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
@@ -297,6 +419,16 @@
               </div>
             </div>
         </div>
+    </section> -->
+    <section id="footer">
+      <div class="container">
+        © 2016 Herman Chan
+        <div class="social-actions">
+          <a href="mailto:hermchan89@gmail.com">Email</a> //
+          <a href="https://www.linkedin.com/in/hermchan">LinkedIn</a> //
+          <a href="https://github.com/hermchan">Github</a>
+        </div>
+      </div>
     </section>
 
     <!-- jQuery -->

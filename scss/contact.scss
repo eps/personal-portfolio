@@ -1,0 +1,17 @@
+#footer {
+  background-color: $white;
+  padding: 20px 0px;
+  color: #abb2bf !important;
+  font-family: $defaultFont;
+  font-size: 12px;
+}
+
+.social-actions {
+  float: right;
+  text-align: right;
+  width: 300px;
+  color: $black;
+  a {
+    color: $black;
+  }
+}

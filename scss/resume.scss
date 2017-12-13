@@ -1,0 +1,120 @@
+#resume {
+  background-color: #ddd;
+  height: auto;
+  font-family: $oswaldFont;
+  .inner {
+    width: 700px;
+    .resume-tagline {
+      font-size: 11px;
+      font-family: $defaultFont;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid $lightestGrey;
+    }
+
+    //WORK EXPERIENCE SECTION
+    .work {
+      float: left;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .description {
+        font-weight: 300 !important;
+        letter-spacing: 1px;
+      }
+      p {
+        margin-top: 20px;
+        font-family: $defaultFont;
+        font-weight: 300;
+        letter-spacing: .5px;
+      }
+      .company-tagline {
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+
+    //EDUCATION SECTION
+    .education {
+      float: left;
+      .education-text {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      p {
+        margin-top: 20px;
+        font-family: $defaultFont;
+        font-weight: 300;
+        letter-spacing: .5px;
+      }
+    }
+
+    .skill {
+      text-transform: uppercase;
+      border-radius: 8px;
+      padding: 7px 15px;
+      border: 1px solid $orange;
+      float: left;
+      letter-spacing: .7px;
+      &:not(:first-child) {
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+    }
+    .resume-info {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      float:left;
+      .company-logo {
+        width: 65px;
+        height: 65px;
+        background-color: #eee;
+        border-radius: 50%;
+        margin-left: -90px;
+        position: absolute;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        &:hover {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+        .beauty-icon {
+          height: 15px;
+          width: 60px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        }
+      }
+      .icon {
+        height: 65px;
+        width: 65px;
+        margin-left: -90px;
+        position: absolute;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        &:hover {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+      }
+    }
+
+    .header {
+      text-align: center;
+      font-family: $oswaldFont;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: $black;
+      padding-bottom: 35px;
+    }
+    .right {
+      position: absolute;
+      right: 15px;
+      float: right;
+    }
+  }
+}

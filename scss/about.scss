@@ -1,0 +1,58 @@
+#about {
+  font-family: $defaultFont;
+  background-color: $lilacGrey;
+  .inner {
+    width: 750px;
+    .inner-header {
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .console-header {
+    background: $lightGrey;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+    height: 25px;
+  }
+  .console {
+    background-color: #383737;
+    color: #abb2bf;
+    height: auto;
+    margin-top: 25px;
+    padding: 50px;
+    font-family: 'Monaco', 'Courier New';
+    .console-link {
+      color: $blue ;
+    }
+    p {
+      font-size: 13px;
+    }
+    .props {
+      color: #ccc;
+      margin-left: 15px;
+    }
+    .obj-props {
+      margin-left: 20px;
+      p {
+        margin: 0;
+      }
+      .fullName {
+        margin-left: 20px;
+      }
+    }
+    .string {
+      color: $green;
+    }
+    .link {
+      color: $purple;
+    }
+    .red {
+      color: $red;
+    }
+    .blue {
+      color: $blue;
+    }
+  }
+}
