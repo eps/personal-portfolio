@@ -1,66 +1,123 @@
-/*
-Error: Undefined variable: "$oswaldFont".
-        on line 13 of scss/resume.scss
+#resume {
+  background-color: #ddd;
+  height: auto;
+  font-family: "Oswald", sans-serif; }
+  #resume .resume-tagline {
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #cec8c8; }
+  #resume .work {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    #resume .work .description {
+      font-weight: 300 !important;
+      letter-spacing: 1px; }
+    #resume .work p {
+      margin-top: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      letter-spacing: .5px; }
+    #resume .work .company-tagline {
+      font-size: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+  #resume .education {
+    float: left; }
+    #resume .education .education-text {
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    #resume .education p {
+      margin-top: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      letter-spacing: .5px; }
+  #resume .skill {
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 7px 15px;
+    border: 1px solid #F05F40;
+    float: left;
+    letter-spacing: .7px; }
+    #resume .skill:not(:first-child) {
+      margin-right: 10px;
+      margin-top: 10px; }
+  #resume .dates {
+    float: right; }
+  #resume .resume-info {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    float: left; }
+    #resume .resume-info .company-logo {
+      width: 65px;
+      height: 65px;
+      background-color: #eee;
+      border-radius: 50%;
+      margin-left: -90px;
+      position: absolute;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); }
+      #resume .resume-info .company-logo:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+      #resume .resume-info .company-logo .beauty-icon {
+        height: 15px;
+        width: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute; }
+    #resume .resume-info .icon {
+      height: 65px;
+      width: 65px;
+      margin-left: -90px;
+      position: absolute;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); }
+      #resume .resume-info .icon:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+  #resume .header {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #000000;
+    padding-bottom: 35px; }
+  #resume .right {
+    position: absolute;
+    right: 15px;
+    float: right; }
 
-8: }
-9: 
-10: .resume-header {
-11:   text-transform: uppercase;
-12:   text-align: center;
-13:   font-family: $oswaldFont;
-14:   letter-spacing: 1px;
-15: }
+@media screen and (max-width: 768px) {
+  section {
+    padding: 50px 0; }
 
-Backtrace:
-scss/resume.scss:13
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/BOOK/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$oswaldFont\".\A         on line 13 of scss/resume.scss\A \A 8: }\A 9: \A 10: .resume-header {\A 11:   text-transform: uppercase;\A 12:   text-align: center;\A 13:   font-family: $oswaldFont;\A 14:   letter-spacing: 1px;\A 15: }"; }
+  #resume .inner .header {
+    padding-bottom: 25px; }
+
+  #resume .inner .resume-tagline {
+    padding-bottom: 25px; }
+
+  #resume .inner .work .company-tagline {
+    font-size: 12px; }
+
+  #resume .resume-info {
+    font-size: 12px; }
+
+  #resume .inner {
+    width: 70%;
+    margin-left: 70px; }
+
+  .resume-info p {
+    font-size: 11px;
+    margin-bottom: 0px; }
+
+  #resume .inner .skill {
+    padding: 4px 12px; } }
+
+/*# sourceMappingURL=resume.css.map */

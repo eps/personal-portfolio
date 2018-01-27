@@ -1,9 +1,9 @@
+@import './variables';
+
 #resume {
   background-color: #ddd;
   height: auto;
   font-family: $oswaldFont;
-  .inner {
-    width: 700px;
     .resume-tagline {
       font-size: 11px;
       font-family: $defaultFont;
@@ -12,7 +12,6 @@
       padding-bottom: 35px;
       border-bottom: 1px solid $lightestGrey;
     }
-
     //WORK EXPERIENCE SECTION
     .work {
       float: left;
@@ -61,6 +60,9 @@
         margin-right: 10px;
         margin-top: 10px;
       }
+    }
+    .dates {
+      float: right;
     }
     .resume-info {
       margin-top: 25px;
@@ -116,5 +118,33 @@
       right: 15px;
       float: right;
     }
+  }
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+  #resume .inner .header {
+    padding-bottom: 25px;
+  }
+  #resume .inner .resume-tagline {
+    padding-bottom: 25px;
+  }
+  #resume .inner .work .company-tagline {
+    font-size: 12px;
+  }
+  #resume .resume-info {
+    font-size: 12px;
+  }
+  #resume .inner {
+    width: 70%;
+    margin-left: 70px;
+  }
+  .resume-info p {
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+  #resume .inner .skill {
+    padding: 4px 12px;
   }
 }

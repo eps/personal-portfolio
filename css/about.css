@@ -1,0 +1,51 @@
+#about {
+  font-family: "Open Sans", sans-serif;
+  background-color: #9896A4; }
+  #about .inner-header {
+    text-transform: uppercase;
+    text-align: center; }
+  #about .console-header {
+    background: #dedede;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+    height: 25px; }
+  #about .console {
+    background-color: #383737;
+    color: #abb2bf;
+    height: auto;
+    margin-top: 25px;
+    padding: 50px;
+    font-family: 'Monaco', 'Courier New'; }
+    #about .console .console-link {
+      color: #61afef; }
+    #about .console p {
+      font-size: 13px; }
+    #about .console .props {
+      color: #ccc;
+      margin-left: 15px; }
+    #about .console .obj-props {
+      margin-left: 20px; }
+      #about .console .obj-props p {
+        margin: 0; }
+      #about .console .obj-props .fullName {
+        margin-left: 20px; }
+    #about .console .string {
+      color: #90ae84; }
+    #about .console .link {
+      color: #b77abd; }
+    #about .console .red {
+      color: #e06c75; }
+    #about .console .blue {
+      color: #61afef; }
+
+@media screen and (max-width: 768px) {
+  #about .console {
+    padding: 25px; }
+    #about .console p {
+      font-size: 11px; }
+  #about .object {
+    font-size: 11px; } }
+
+/*# sourceMappingURL=about.css.map */

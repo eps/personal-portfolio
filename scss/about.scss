@@ -1,12 +1,11 @@
+@import './variables';
+
 #about {
   font-family: $defaultFont;
   background-color: $lilacGrey;
-  .inner {
-    width: 750px;
-    .inner-header {
-      text-transform: uppercase;
-      text-align: center;
-    }
+  .inner-header {
+    text-transform: uppercase;
+    text-align: center;
   }
   .console-header {
     background: $lightGrey;
@@ -53,6 +52,20 @@
     }
     .blue {
       color: $blue;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about  {
+    .console {
+      padding: 25px;
+      p {
+        font-size: 11px;
+      }
+    }
+    .object {
+      font-size: 11px;
     }
   }
 }
