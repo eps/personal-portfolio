@@ -338,12 +338,4 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222; }
 
-@media screen and (max-width: 768px) {
-  #portfolio {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px; }
-    #portfolio img {
-      padding-bottom: 10px; } }
-
 /*# sourceMappingURL=main.css.map */

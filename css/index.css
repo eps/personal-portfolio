@@ -338,13 +338,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222; }
 
-@media screen and (max-width: 768px) {
-  #portfolio {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px; }
-    #portfolio img {
-      padding-bottom: 10px; } }
 #resume {
   background-color: #ddd;
   height: auto;
@@ -551,8 +544,7 @@ header .header-content .header-content-inner p {
     #about .console p {
       font-size: 13px; }
     #about .console .props {
-      color: #ccc;
-      margin-left: 15px; }
+      color: #ccc; }
     #about .console .obj-props {
       margin-left: 20px; }
       #about .console .obj-props p {
