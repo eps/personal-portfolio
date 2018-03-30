@@ -53,7 +53,7 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  background-color: #F7CAC9;
+  background-color: #d5d5d5;
   padding: 100px 0; }
 
 aside {
@@ -337,5 +337,13 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #222; }
+
+@media screen and (max-width: 768px) {
+  #portfolio {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px; }
+    #portfolio img {
+      padding-bottom: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

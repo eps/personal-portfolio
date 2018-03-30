@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    background-color: #F7CAC9;
+    background-color: #d5d5d5;
     padding: 100px 0;
 }
 
@@ -243,13 +243,13 @@ aside {
 }
 
 @media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
-    }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
 
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
 }
 
 .call-to-action h2 {
@@ -407,4 +407,17 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+
+@media screen and (max-width: 768px) {
+  #portfolio {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    img {
+      padding-bottom: 10px;
+    }
+  }
+
 }
