@@ -525,45 +525,68 @@ header .header-content .header-content-inner p {
   #about .inner-header {
     text-transform: uppercase;
     text-align: center; }
-  #about .console-header {
+  #about .terminal-header {
     background: #dedede;
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 10px 10px 0 0;
     float: left;
-    height: 25px; }
-  #about .console {
+    height: 25px;
+    display: flex;
+    align-items: center; }
+    #about .terminal-header .header-button {
+      margin-left: 9px; }
+      #about .terminal-header .header-button .red {
+        border-radius: 50%;
+        border: 1px solid #f65549;
+        background-color: #f96256;
+        height: 12px;
+        width: 12px; }
+      #about .terminal-header .header-button .yellow {
+        border-radius: 50%;
+        border: 1px solid #ffb524;
+        background-color: #fdbc3d;
+        height: 12px;
+        width: 12px; }
+      #about .terminal-header .header-button .green {
+        border-radius: 50%;
+        border: 1px solid #2dbb41;
+        background-color: #33c948;
+        height: 12px;
+        width: 12px; }
+  #about .terminal {
     background-color: #383737;
     color: #abb2bf;
     height: auto;
     margin-top: 25px;
     padding: 50px;
-    font-family: 'Monaco', 'Courier New'; }
-    #about .console .console-link {
+    font-family: 'Monaco', 'Courier New';
+    border-radius: 10px 10px 4px 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12); }
+    #about .terminal .terminal-link {
       color: #61afef; }
-    #about .console p {
+    #about .terminal p {
       font-size: 13px; }
-    #about .console .props {
-      color: #ccc; }
-    #about .console .obj-props {
+    #about .terminal .props {
+      color: #e7d184; }
+    #about .terminal .obj-props {
       margin-left: 20px; }
-      #about .console .obj-props p {
+      #about .terminal .obj-props p {
         margin: 0; }
-      #about .console .obj-props .fullName {
+      #about .terminal .obj-props .fullName {
         margin-left: 20px; }
-    #about .console .string {
+    #about .terminal .string {
       color: #90ae84; }
-    #about .console .link {
+    #about .terminal .link {
       color: #b77abd; }
-    #about .console .red {
+    #about .terminal .red {
       color: #e06c75; }
-    #about .console .blue {
+    #about .terminal .blue {
       color: #61afef; }
 
 @media screen and (max-width: 768px) {
-  #about .console {
+  #about .terminal {
     padding: 25px; }
-    #about .console p {
+    #about .terminal p {
       font-size: 11px; }
   #about .object {
     font-size: 11px; } }
