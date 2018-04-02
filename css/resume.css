@@ -1,7 +1,8 @@
 #resume {
-  background-color: #ddd;
+  background-color: #3f3f3f;
   height: auto;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  color: #dcdcdc; }
   #resume .resume-tagline {
     font-size: 11px;
     font-family: "Open Sans", sans-serif;
@@ -39,7 +40,7 @@
     text-transform: uppercase;
     border-radius: 8px;
     padding: 7px 15px;
-    border: 1px solid #F05F40;
+    border: 1px solid #8c8f92;
     float: left;
     letter-spacing: .7px; }
     #resume .skill:not(:first-child) {
@@ -57,12 +58,9 @@
       background-color: #eee;
       border-radius: 50%;
       margin-left: -90px;
-      position: absolute;
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%); }
+      position: absolute; }
       #resume .resume-info .company-logo:hover {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%); }
+        cursor: pointer; }
       #resume .resume-info .company-logo .beauty-icon {
         height: 15px;
         width: 60px;
@@ -74,19 +72,16 @@
       height: 65px;
       width: 65px;
       margin-left: -90px;
-      position: absolute;
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%); }
+      position: absolute; }
       #resume .resume-info .icon:hover {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%); }
+        cursor: pointer; }
   #resume .header {
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 2px;
-    color: #000000;
+    color: #dcdcdc;
     padding-bottom: 35px; }
   #resume .right {
     position: absolute;
