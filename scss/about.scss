@@ -2,10 +2,11 @@
 
 #about {
   font-family: $defaultFont;
-  background-color: $lilacGrey;
+  background-color: #f5f5f5;
   .inner-header {
-    text-transform: uppercase;
+    font-family: $ralewayFont;
     text-align: center;
+    color: #6441a4;
   }
   .terminal-header {
     background: $lightGrey;
@@ -44,10 +45,10 @@
     background-color: #383737;
     color: #abb2bf;
     height: auto;
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 50px;
     font-family: 'Monaco', 'Courier New';
-    border-radius: 10px 10px 4px 4px;
+    border-radius: 5px;
     box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
     .terminal-link {
       color: $blue ;
