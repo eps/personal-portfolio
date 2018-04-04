@@ -4,14 +4,23 @@
   color: #abb2bf !important;
   font-family: $defaultFont;
   font-size: 12px;
-}
-
-.social-actions {
-  float: right;
-  text-align: right;
-  width: 300px;
-  color: $black;
-  a {
-    color: $black;
+  .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-actions {
+    color: #abb2bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      margin-right: 10px;
+    }
+    a {
+      cursor: pointer;
+      color: #abb2bf;
+    }
   }
 }

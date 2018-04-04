@@ -590,13 +590,20 @@ header .header-content .header-content-inner p {
   color: #abb2bf !important;
   font-family: "Open Sans", sans-serif;
   font-size: 12px; }
-
-.social-actions {
-  float: right;
-  text-align: right;
-  width: 300px;
-  color: #000000; }
-  .social-actions a {
-    color: #000000; }
+  #footer .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  #footer .social-actions {
+    color: #abb2bf;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #footer .social-actions i {
+      margin-right: 10px; }
+    #footer .social-actions a {
+      cursor: pointer;
+      color: #abb2bf; }
 
 /*# sourceMappingURL=index.css.map */
