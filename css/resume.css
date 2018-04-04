@@ -84,17 +84,22 @@
         margin: 3px; }
 
 @media screen and (max-width: 768px) {
-  section {
-    padding: 50px 0; }
-    section .resume-container {
+  #resume {
+    padding: 30px 0;
+    font-size: 12px; }
+    #resume .resume-container {
       width: 90%; }
-      section .resume-container .resume-text {
-        font-size: 11px;
+    #resume .resume-info {
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif; }
+      #resume .resume-info .resume-text {
         font-family: "Open Sans", sans-serif;
         margin-top: 5px; }
-
-  .company-name {
-    font-size: 12px;
-    font-family: "Roboto Condensed", sans-serif; } }
+      #resume .resume-info .company-tag {
+        flex-wrap: wrap; }
+    #resume .company-logo {
+      display: none !important; }
+    #resume .icon {
+      display: none !important; } }
 
 /*# sourceMappingURL=resume.css.map */

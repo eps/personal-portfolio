@@ -88,14 +88,12 @@
 
 @media screen and (max-width: 768px) {
   #about  {
+    padding: 50px 0;
     .terminal {
       padding: 25px 25px 25px 25px;
-      p {
-        font-size: 11px;
-      }
     }
     .object {
-      font-size: 11px;
+      font-size: 12px;
     }
   }
 }
