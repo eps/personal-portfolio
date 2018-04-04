@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 /*!
  * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 html,
 body {
   width: 100%;
@@ -353,13 +357,13 @@ body {
   width: 65px;
   height: 65px;
   margin-right: 10px;
-  margin-left: -70px; }
+  margin-left: -75px; }
 
 #resume {
   background-color: #3f3f3f;
   height: auto;
-  font-family: "Oswald", sans-serif;
-  color: #dcdcdc; }
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a4a4a4; }
   #resume .resume-container {
     width: 50%;
     margin: 0 auto; }
@@ -367,16 +371,17 @@ body {
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     letter-spacing: 2px;
     color: #dcdcdc; }
   #resume .resume-tagline {
-    font-size: 11px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 2px;
-    padding-bottom: 35px;
-    border-bottom: 1px solid #cec8c8; }
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cec8c8;
+    color: #7080d0; }
   #resume .content {
     margin-bottom: 25px; }
     #resume .content .resume-row {
@@ -385,19 +390,26 @@ body {
       align-items: center; }
       #resume .content .resume-row .company-name {
         font-family: "Open Sans", sans-serif;
-        font-weight: bold; }
+        font-size: 16px;
+        letter-spacing: .5px;
+        color: #dcdcdc; }
       #resume .content .resume-row .resume-info {
         display: flex;
-        flex-direction: column;
-        justify-content: center; }
+        flex-direction: column; }
         #resume .content .resume-row .resume-info .company-tag {
           display: flex;
-          justify-content: space-between; }
+          justify-content: space-between;
+          color: #a4a4a4;
+          font-family: "Open Sans", sans-serif; }
         #resume .content .resume-row .resume-info .resume-text {
           margin: 20px 0px 20px 0px;
           font-family: "Open Sans", sans-serif;
           font-weight: 300;
           letter-spacing: 0.5px; }
+      #resume .content .resume-row .beauty-logo {
+        background-image: url("../img/companies/beauty.png");
+        width: 65px;
+        height: 65px; }
       #resume .content .resume-row .company-logo {
         display: flex;
         justify-content: center;
@@ -407,7 +419,7 @@ body {
         background-color: #eee;
         border-radius: 50%;
         margin-right: 10px;
-        margin-left: -70px; }
+        margin-left: -75px; }
         #resume .content .resume-row .company-logo .beauty-icon {
           height: 15px;
           width: 60px; }
@@ -436,7 +448,8 @@ body {
         margin-top: 5px; }
 
   .company-name {
-    font-size: 12px; } }
+    font-size: 12px;
+    font-family: "Roboto Condensed", sans-serif; } }
 header {
   position: relative;
   width: 100%;
@@ -505,7 +518,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #6441a4; }
   #about .terminal-header {
-    background: #dedede;
+    background: #dcdcdc;
     width: 100%;
     border-radius: 10px 10px 0 0;
     height: 25px;

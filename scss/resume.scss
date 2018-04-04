@@ -4,14 +4,14 @@
   width: 65px;
   height: 65px;
   margin-right: 10px;
-  margin-left: -70px;
+  margin-left: -75px;
 }
 
 #resume {
   background-color: #3f3f3f;
   height: auto;
-  font-family: $oswaldFont;
-  color: #dcdcdc;
+  font-family: $robotoFont;
+  color: #a4a4a4;
   .resume-container {
     width: 50%;
     margin: 0 auto;
@@ -20,17 +20,18 @@
     text-align: center;
     font-family: $oswaldFont;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     letter-spacing: 2px;
     color: #dcdcdc;
   }
   .resume-tagline {
-    font-size: 11px;
-    font-family: $defaultFont;
-    font-weight: 700;
+    font-family: $robotoFont;
+    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 2px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
     border-bottom: 1px solid $lightestGrey;
+    color: #7080d0;
   }
   .content {
     margin-bottom: 25px;
@@ -40,15 +41,18 @@
       align-items: center;
       .company-name {
         font-family: $defaultFont;
-        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: .5px;
+        color: #dcdcdc;
       }
       .resume-info {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         .company-tag {
           display: flex;
           justify-content: space-between;
+          color: #a4a4a4;
+          font-family: $defaultFont;
         }
         .resume-text {
           margin: 20px 0px 20px 0px;
@@ -56,6 +60,11 @@
           font-weight: 300;
           letter-spacing: .5px
         }
+      }
+      .beauty-logo {
+        background-image: url('../img/companies/beauty.png');
+        width: 65px;
+        height: 65px;
       }
       .company-logo {
         display: flex;
@@ -66,7 +75,7 @@
         background-color: #eee;
         border-radius: 50%;
         margin-right: 10px;
-        margin-left: -70px;
+        margin-left: -75px;
         .beauty-icon {
           height: 15px;
           width: 60px;
@@ -105,6 +114,7 @@
   }
   .company-name {
     font-size: 12px;
+    font-family: $robotoFont;
   }
 }
   // #resume .inner .header {
