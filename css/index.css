@@ -536,7 +536,6 @@ header .header-content .header-content-inner p {
     background: #dedede;
     width: 100%;
     border-radius: 10px 10px 0 0;
-    float: left;
     height: 25px;
     display: flex;
     align-items: center; }
@@ -564,10 +563,9 @@ header .header-content .header-content-inner p {
     background-color: #383737;
     color: #abb2bf;
     height: auto;
-    margin-top: 20px;
     padding: 50px;
     font-family: 'Monaco', 'Courier New';
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12); }
     #about .terminal .terminal-link {
       color: #61afef; }
@@ -590,9 +588,13 @@ header .header-content .header-content-inner p {
     #about .terminal .blue {
       color: #61afef; }
 
+.terminal-container {
+  width: 90%;
+  margin: 0 auto; }
+
 @media screen and (max-width: 768px) {
   #about .terminal {
-    padding: 25px; }
+    padding: 25px 25px 25px 25px; }
     #about .terminal p {
       font-size: 11px; }
   #about .object {
