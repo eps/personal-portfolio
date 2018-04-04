@@ -7,7 +7,7 @@ Error: Undefined variable: "$white".
 3:   padding: 20px 0px;
 4:   color: #abb2bf !important;
 5:   font-family: $defaultFont;
-6:   font-size: 12px;
+6:   font-size: 16px;
 7:   .footer-container {
 
 Backtrace:
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 2 of ./scss/contact.scss\A \A 1: #footer {\A 2:   background-color: $white;\A 3:   padding: 20px 0px;\A 4:   color: #abb2bf !important;\A 5:   font-family: $defaultFont;\A 6:   font-size: 12px;\A 7:   .footer-container {"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 2 of ./scss/contact.scss\A \A 1: #footer {\A 2:   background-color: $white;\A 3:   padding: 20px 0px;\A 4:   color: #abb2bf !important;\A 5:   font-family: $defaultFont;\A 6:   font-size: 16px;\A 7:   .footer-container {"; }

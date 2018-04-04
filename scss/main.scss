@@ -10,10 +10,6 @@ body {
     height: 100%;
 }
 
-body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
-}
-
 hr {
     max-width: 50px;
     border-color: #968dd6;
@@ -407,19 +403,4 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
-}
-
-#portfolio {
-  .header {
-    font-family: 'Helvetica Neue',Arial,sans-serif;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: #525f7f;
-    font-size: 2em;
-    padding-top: 20px;
-  }
-  hr {
-    margin-bottom: 30px;
-  }
 }
