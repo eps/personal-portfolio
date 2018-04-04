@@ -1,8 +1,24 @@
+.icon {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  margin-left: -70px; }
+
 #resume {
   background-color: #3f3f3f;
   height: auto;
   font-family: "Oswald", sans-serif;
   color: #dcdcdc; }
+  #resume .resume-container {
+    width: 50%;
+    margin: 0 auto; }
+  #resume .header {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #dcdcdc; }
   #resume .resume-tagline {
     font-size: 11px;
     font-family: "Open Sans", sans-serif;
@@ -10,109 +26,65 @@
     letter-spacing: 2px;
     padding-bottom: 35px;
     border-bottom: 1px solid #cec8c8; }
-  #resume .work {
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-    #resume .work .description {
-      font-weight: 300 !important;
-      letter-spacing: 1px; }
-    #resume .work p {
-      margin-top: 20px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 300;
-      letter-spacing: .5px; }
-    #resume .work .company-tagline {
-      font-size: 15px;
-      letter-spacing: 1px;
-      text-transform: uppercase; }
-  #resume .education {
-    float: left; }
-    #resume .education .education-text {
-      letter-spacing: 1px;
-      text-transform: uppercase; }
-    #resume .education p {
-      margin-top: 20px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 300;
-      letter-spacing: .5px; }
-  #resume .skill {
-    text-transform: uppercase;
-    border-radius: 8px;
-    padding: 7px 15px;
-    border: 1px solid #8c8f92;
-    float: left;
-    letter-spacing: .7px; }
-    #resume .skill:not(:first-child) {
-      margin-right: 10px;
-      margin-top: 10px; }
-  #resume .dates {
-    float: right; }
-  #resume .resume-info {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    float: left; }
-    #resume .resume-info .company-logo {
-      width: 65px;
-      height: 65px;
-      background-color: #eee;
-      border-radius: 50%;
-      margin-left: -90px;
-      position: absolute; }
-      #resume .resume-info .company-logo:hover {
-        cursor: pointer; }
-      #resume .resume-info .company-logo .beauty-icon {
-        height: 15px;
-        width: 60px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute; }
-    #resume .resume-info .icon {
-      height: 65px;
-      width: 65px;
-      margin-left: -90px;
-      position: absolute; }
-      #resume .resume-info .icon:hover {
-        cursor: pointer; }
-  #resume .header {
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 2px;
-    color: #dcdcdc;
-    padding-bottom: 35px; }
-  #resume .right {
-    position: absolute;
-    right: 15px;
-    float: right; }
+  #resume .content {
+    margin-bottom: 25px; }
+    #resume .content .resume-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      #resume .content .resume-row .company-name {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold; }
+      #resume .content .resume-row .resume-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #resume .content .resume-row .resume-info .company-tag {
+          display: flex;
+          justify-content: space-between; }
+        #resume .content .resume-row .resume-info .resume-text {
+          margin: 20px 0px 20px 0px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          letter-spacing: 0.5px; }
+      #resume .content .resume-row .company-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 65px;
+        background-color: #eee;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-left: -70px; }
+        #resume .content .resume-row .company-logo .beauty-icon {
+          height: 15px;
+          width: 60px; }
+    #resume .content .skills-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      #resume .content .skills-row .skill {
+        text-transform: uppercase;
+        border-radius: 8px;
+        padding: 7px 15px;
+        border: 1px solid #8c8f92;
+        float: left;
+        letter-spacing: .7px;
+        margin: 3px; }
 
 @media screen and (max-width: 768px) {
   section {
     padding: 50px 0; }
+    section .resume-container {
+      width: 90%; }
+      section .resume-container .resume-text {
+        font-size: 11px;
+        font-family: "Open Sans", sans-serif;
+        margin-top: 5px; }
 
-  #resume .inner .header {
-    padding-bottom: 25px; }
-
-  #resume .inner .resume-tagline {
-    padding-bottom: 25px; }
-
-  #resume .inner .work .company-tagline {
-    font-size: 12px; }
-
-  #resume .resume-info {
-    font-size: 12px; }
-
-  #resume .inner {
-    width: 70%;
-    margin-left: 70px; }
-
-  .resume-info p {
-    font-size: 11px;
-    margin-bottom: 0px; }
-
-  #resume .inner .skill {
-    padding: 4px 12px; } }
+  .company-name {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=resume.css.map */
