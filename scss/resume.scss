@@ -100,8 +100,8 @@
     .education {
       align-items: center;
       display: flex;
+      font-family: $defaultFont;
       .school-name {
-        font-family: $defaultFont;
         letter-spacing: .5px;
         color: #dcdcdc;
         font-size: 16px;

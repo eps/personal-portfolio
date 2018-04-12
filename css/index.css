@@ -424,9 +424,9 @@ body {
         margin: 3px; }
     #resume .content .education {
       align-items: center;
-      display: flex; }
+      display: flex;
+      font-family: "Open Sans", sans-serif; }
       #resume .content .education .school-name {
-        font-family: "Open Sans", sans-serif;
         letter-spacing: .5px;
         color: #dcdcdc;
         font-size: 16px; }
